@@ -1,0 +1,11 @@
+.carousel {
+  width: 50%;
+  height: 90%;
+}
+
+.alinear {
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  justify-content: center;
+  padding: 7%;
+}/*# sourceMappingURL=Carousel.css.map */

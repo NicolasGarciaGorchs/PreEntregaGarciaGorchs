@@ -1,0 +1,42 @@
+#sponsors {
+  padding: 8%;
+  font-family: "Sofia Sans", sans-serif;
+  text-align: center;
+  font-size: 150%;
+  background-color: rgb(12, 12, 12);
+  color: rgb(175, 174, 174);
+}
+
+.padding_sponsors {
+  padding-bottom: 3%;
+}
+
+.sizeFotoSponsor1 {
+  margin: 2%;
+  width: 25%;
+  transition: width 0.2s;
+}
+
+.sizeFotoSponsor1:hover {
+  width: 28%;
+}
+
+.sizeFotoSponsor2 {
+  margin: 2%;
+  width: 20%;
+  transition: width 0.2s;
+}
+
+.sizeFotoSponsor2:hover {
+  width: 24%;
+}
+
+.sizeFotoSponsor3 {
+  margin: 2%;
+  width: 28%;
+  transition: width 0.2s;
+}
+
+.sizeFotoSponsor3:hover {
+  width: 32%;
+}/*# sourceMappingURL=Sponsors.css.map */

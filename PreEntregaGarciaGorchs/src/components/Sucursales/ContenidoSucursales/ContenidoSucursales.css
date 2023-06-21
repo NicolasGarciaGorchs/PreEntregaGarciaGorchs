@@ -1,0 +1,35 @@
+.contenidoSucursales {
+  padding: 10%;
+  color: rgb(175, 174, 174);
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+
+.titulo_sucursales {
+  font-size: 210%;
+  padding-bottom: 8%;
+}
+
+.texto_sucursales {
+  font-size: 130%;
+  padding-bottom: 7%;
+}
+
+.subtitulo {
+  font-size: 200%;
+  -webkit-text-decoration: underline 1px rgb(175, 174, 174);
+          text-decoration: underline 1px rgb(175, 174, 174);
+  padding-bottom: 5%;
+}
+
+.seccion_sucursales1 {
+  padding-bottom: 5%;
+}
+
+.seccion_sucursales2 {
+  padding-top: 5%;
+}
+
+.size_sucursales {
+  font-size: 130%;
+}/*# sourceMappingURL=ContenidoSucursales.css.map */

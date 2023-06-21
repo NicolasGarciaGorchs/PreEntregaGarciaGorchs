@@ -8,7 +8,7 @@
     font-family: 'Sofia Sans', sans-serif;
     text-align: center;
     font-size: 100%;
-    color:white;
+    color:rgb(175, 174, 174);
 }
 
 .footerF {
@@ -20,27 +20,29 @@
 .fontFooter {
     font-family: 'Yellowtail', cursive;
     font-size: 220%;
-    color:white;
+    color:rgb(175, 174, 174);
 }
 
 .fa-instagram {
-    color:white;
+    color:rgb(175, 174, 174);
 }
 
 .fa-facebook {
-    color:white;
+    color:rgb(175, 174, 174);
 }
 
 .fa-whatsapp {
-    color:white;
+    color:rgb(175, 174, 174);
 }
 
 .fa-instagram:hover {
+    color:white;
     background-image: linear-gradient(to bottom, rgb(255, 0, 242), rgb(255, 197, 5));
     border-radius: 100%;
 }
 
 .fa-whatsapp:hover {
+    color:white;
     background-color:rgb(0, 255, 34);
     border-radius: 100%;
 }

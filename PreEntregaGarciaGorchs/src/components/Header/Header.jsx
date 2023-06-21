@@ -1,4 +1,6 @@
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import {Link} from 'react-router-dom'
+import '../Header/Header.css'
+
 
 const Header = () => {
 
@@ -6,9 +8,9 @@ const Header = () => {
     <header className="styleNavbar">
       <div className="container">   
         <div>
-          <a className="navbar-brand" href="./home.html">
+          <Link className="navbar-brand" to="/">
             <img className="sizeLogo" src='/logogris.png' alt="MossiMotosLogo" />
-          </a>
+          </Link>
         </div>
         
         <nav className="navbar navbar_medio navbar-expand-lg navbar-dark text-bg-black">
@@ -20,19 +22,18 @@ const Header = () => {
           <div className="collapse navbar-collapse  " id="navbarSupportedContent">
             <ul className="navbar-nav me-auto  ">
               <li className="nav-item">
-              <a className="nav-link style_nav " href="./repuestos.html">Repuestos</a>
+              <Link className="nav-link style_nav " to="/repuestos">Repuestos</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link style_nav" href="./turnosonline.html">Turnos Online</a>
+                <Link className="nav-link style_nav" to="/turnosonline">Turnos Online</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link style_nav" href="./sucursales.html">Sucursales</a>
+                <Link className="nav-link style_nav" to="/sucursales">Sucursales</Link>
               </li>
             </ul>
           </div>
         </nav>
         </div>
-        <ItemListContainer mensaje="Mirá tus likes en tiempo real!" /> 
     </header>
     )
 }

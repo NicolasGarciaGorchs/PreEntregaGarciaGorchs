@@ -1,26 +1,23 @@
-import Header from './components/Header/Header'
-import ContenidoPrincipal from './components/ContenidoPrincipal/ContenidoPrincipal'
-import Sponsors from './components/Sponsors/Sponsors'
-import Carousel from './components/Carousel/Carousel'
-import Footer from './components/Footer/footer'
-import './components/Header/Header.css'
-import './components/ItemListContainer/ItemListContainer.css'
-import './components/ContenidoPrincipal/ContenidoPrincipal.css'
-import './components/Sponsors/Sponsors.css'
-import './components/Carousel/Carousel.css'
-import './components/Footer/Footer.css'
+import Inicio from './components/Inicio/inicio'
+import Sucursales from './components/Sucursales/Sucursales'
+import TurnosOnline from './components/TurnosOnline/TurnosOnline'
+import Repuestos from './components/Repuestos/Repuestos'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+
 
 function App() {
 
   return (
-    <>
-    <Header />
-    <ContenidoPrincipal />
-    <Sponsors />
-    <Carousel />
-    <Footer />
-    </>
+    <BrowserRouter>  
+    <Routes>
+    <Route path="/" element={<Inicio/>}/>
+    <Route path="/sucursales" element={<Sucursales/>}/>
+    <Route path="/turnosonline" element={<TurnosOnline/>}/>
+    <Route path="/repuestos" element={<Repuestos/>}/>
+    <Route path= "*" element= {<Navigate to={"/"}/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 

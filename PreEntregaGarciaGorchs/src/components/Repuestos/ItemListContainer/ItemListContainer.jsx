@@ -38,7 +38,7 @@ const ItemListContainer = () => {
         <div className="container my-5">
             {
                 loading
-                    ? <div className="loading-bar">Cargando...</div>
+                    ? <div className="centrar_loading"><div className="loading-bar">Cargando...</div></div>
                     : <ItemList items={listado}/>
             }
         </div>

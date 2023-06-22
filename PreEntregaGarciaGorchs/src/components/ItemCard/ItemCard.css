@@ -30,7 +30,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 50px;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
   gap: 3px;
 }
 
@@ -39,10 +40,16 @@
 }
 
 .card-img {
-  /* clear and add new css */
   transition: all 0.5s;
   display: flex;
   justify-content: center;
+  width: 150px;
+  height: 350px;
+}
+
+.card-img .img {
+  width: 150px !important;
+  height: 250px !important;
 }
 
 .card-title {
@@ -112,7 +119,7 @@
 }
 
 .card-btn:hover {
-  background-color: orange !important;
+  background-color: rgb(255, 166, 0) !important;
   color: black !important;
 }
 

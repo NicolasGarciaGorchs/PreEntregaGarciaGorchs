@@ -1,4 +1,4 @@
-import '../TurnosOnline/TurnosOnline.css'
+
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import ContenidoTurnos from './ContenidoTurnos/ContenidoTurnos'

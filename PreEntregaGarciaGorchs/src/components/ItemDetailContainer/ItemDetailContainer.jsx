@@ -29,7 +29,7 @@ const ItemDetailContainer = () => {
             loading 
                 ? <div className="loading-bar">
                     Cargando
-                    </div>
+                </div>
                 : <ItemDetail {...item}/>
            }
         </div>

@@ -1,1 +1,22 @@
-/*# sourceMappingURL=Buscador.css.map */
+.contenedor_buscador {
+  padding: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario_buscador {
+  justify-content: center;
+  display: flex;
+}
+
+.titulo_buscador {
+  font-size: 120%;
+}
+
+.form_buscador {
+  width: 25%;
+}
+
+.boton_buscador {
+  padding-top: 4%;
+}/*# sourceMappingURL=Buscador.css.map */

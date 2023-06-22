@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Buscador.css"}
+{"version":3,"sources":["Buscador.scss","Buscador.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,mBAAA;EACA,uBAAA;ACCJ;;ADGA;EACI,uBAAA;EACA,aAAA;ACAJ;;ADGA;EACI,eAAA;ACAJ;;ADGA;EACI,UAAA;ACAJ;;ADGA;EACI,eAAA;ACAJ","file":"Buscador.css"}

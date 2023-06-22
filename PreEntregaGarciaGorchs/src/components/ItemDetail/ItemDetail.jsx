@@ -19,6 +19,7 @@ const ItemDetail = ({id, nombre, precio, category, descripcion, img, stock}) => 
             stock, 
             cantidad, 
         }
+        console.log(item)
     }
 
     
@@ -36,7 +37,7 @@ const ItemDetail = ({id, nombre, precio, category, descripcion, img, stock}) => 
 
             <h4>Precio: ${precio}</h4>
             <br/>
-            <small>categoría: {category}</small>
+            <small>categoría: {categoria}</small>
 
 
             <ItemCount 

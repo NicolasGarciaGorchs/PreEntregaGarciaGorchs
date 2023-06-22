@@ -1,7 +1,7 @@
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect } from 'react'
-import { pedirDatos } from '../../../helpers/pedirDatos'
+import { pedirDatos } from '../../helpers/pedirDatos'
 import { useParams } from 'react-router-dom'
 import { useSearchParams } from 'react-router-dom'
 
@@ -35,10 +35,12 @@ const ItemListContainer = () => {
                         : productos
 
     return (
-        <div className="container my-5">
+        <div className="container padding_list my-5">
             {
                 loading
-                    ? <div className="centrar_loading"><div className="loading-bar">Cargando...</div></div>
+                    ? <div className="loader">
+					<div data-glitch="Loading..." className="glitch">Cargando...</div>
+				 </div>
                     : <ItemList items={listado}/>
             }
         </div>

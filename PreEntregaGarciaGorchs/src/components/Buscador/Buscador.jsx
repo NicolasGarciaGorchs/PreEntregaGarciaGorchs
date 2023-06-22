@@ -1,4 +1,4 @@
-import '../Buscador/Buscador.css'
+import './Buscador.css'
 import { useRef } from "react"
 
 const Buscador = () => {

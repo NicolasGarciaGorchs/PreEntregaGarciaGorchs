@@ -1,7 +1,7 @@
-import '../Repuestos/Repuestos.css'
+import '../Repuestos/ContenidoRepuestos/ContenidoRepuestos'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import ItemListContainer from './ItemListContainer/ItemListContainer'
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import ContenidoRepuestos from './ContenidoRepuestos/ContenidoRepuestos'
 
 

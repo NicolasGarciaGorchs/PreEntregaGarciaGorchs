@@ -8,11 +8,11 @@ const ContenidoRepuestos = () => {
             <div className="titulo_repuestos">
                 ¡BIENVENIDOS A NUESTRA TIENDA ONLINE!
             </div>
-            <div className="texto_repuestos">
+            {/* <div className="texto_repuestos">
                 Envios a todo el país. Envios en 24hs Zona CABA y GBA
-            </div>
-            <p className="texto_compra">¡Clickeá para ver el estado de tu compra!</p>
-            <button type="button" className="btn btn-success">Ir a la Caja</button>
+            </div> */}
+            {/* <p className="texto_compra">¡Clickeá para ver el estado de tu compra!</p>
+            <button type="button" className="btn btn-success">Ir a la Caja</button> */}
             {/* <button id="dentroDeCarrito"><i className="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
             <main id="productoContenedor">
                 <div className="modeloContenedor">

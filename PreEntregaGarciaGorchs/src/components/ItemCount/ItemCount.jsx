@@ -8,14 +8,30 @@ const ItemCount = ({ max, cantidad, setCantidad, handleAgregar }) => {
         cantidad > 1 && setCantidad(cantidad - 1)
     }
 
-
     return (
-        <div>
-            <button onClick={handleRestar} className="btn btn-outline-primary">-</button>
+        <div className= "style_count">
+        <div className="padding_count">
+            <button 
+                onClick={handleRestar} 
+                className={cantidad === 1 ? "btn btn-danger" : "btn btn-primary"}
+                disabled={cantidad === 1}
+            >
+                -
+            </button>
+
             <span className="mx-3">{cantidad}</span>
-            <button onClick={handleSumar} className="btn btn-primary">+</button>
-            <br/>
-            <button onClick={handleAgregar} className="btn btn-success my-2">Agregar al carrito</button>
+            <button 
+                onClick={handleSumar} 
+                className={cantidad === max ? "btn btn-danger" : "btn btn-primary"}
+                disabled={cantidad === max}
+
+            >
+                +
+            </button>
+        </div>
+        <div className="style_agregar">
+            <button onClick={handleAgregar} className="btn btn-success">Agregar al carrito</button>
+        </div>
         </div>
     )
 }

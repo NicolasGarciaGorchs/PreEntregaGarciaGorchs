@@ -1,5 +1,6 @@
 .padding_contenido {
-  padding: 10%;
+  padding-top: 10% !important;
+  padding: 5%;
   color: rgb(175, 174, 174);
   font-family: "Jost", sans-serif;
   text-align: center;

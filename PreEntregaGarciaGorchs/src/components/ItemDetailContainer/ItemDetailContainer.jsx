@@ -1,8 +1,9 @@
+import '../ItemDetailContainer/ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
-import '../ItemDetailContainer/ItemDetailContainer.css'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 
 const ItemDetailContainer = () => {
 
@@ -15,23 +16,29 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-            .then((res) => {
-                setItem(res.find((prod) => prod.id === Number(itemId)))
+        // 1.- armar la referencia
+        const itemRef = doc(db, "productos", itemId)
+        // 2.- solicitar el doc
+        getDoc(itemRef)
+            .then((doc) => {
+                setItem({
+                    ...doc.data(),
+                    id: doc.id
+                })
             })
-            .catch((err) => console.log(err))
+            .catch(e => console.log(e))
             .finally(() => setLoading(false))
+
     }, [itemId])
 
     return (
-        <div className="container my-5">
-           {
+        <div>
+             {/* {
             loading 
-                ? <div className="loading-bar">
-                    Cargando
-                </div>
-                : <ItemDetail {...item}/>
-           }
+                ? <div data-glitch="Loading..." className="glitch">Cargando...</div> 
+                :  */}
+                <ItemDetail {...item}/>
+           {/* } */}
         </div>
     )
 }

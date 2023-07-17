@@ -1,0 +1,35 @@
+.detail_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgba(255, 255, 255, 0.671);
+    font-family: 'Jost', sans-serif;
+    padding: 8%;
+}
+
+.detalle_titulo {
+    padding-top: 5%;
+    font-size: 210%;
+    font-family: 'Jost', sans-serif;
+    color:rgba(255, 255, 255, 0.671);
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+  }
+
+.titulo_prod {
+    font-size: 150%;
+}
+
+.style_count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.padding_count {
+    padding-bottom: 25%;
+    padding-top: 15%;
+}

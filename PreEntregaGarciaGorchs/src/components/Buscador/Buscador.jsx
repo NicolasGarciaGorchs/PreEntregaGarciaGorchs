@@ -1,6 +1,9 @@
 import { useRef } from "react"
 import { useSearchParams } from 'react-router-dom'
 import '../Buscador/Buscador.css'
+import CartWidget from "../CartWidget/CartWidget"
+import { FcSearch } from 'react-icons/fc';
+
 
 const Buscador = () => {
     const [, setSearchParams] = useSearchParams()
@@ -21,27 +24,22 @@ const Buscador = () => {
         })
     }
 
-    const handleReset = () => {
-        setSearchParams({})
-    }
-
     return (
         <div className="contenedor_buscador">
-            <p className="titulo_buscador">¡Encontrá lo que necesitas!</p>
-            <div className="formulario_buscador">
-        <form className="p-3 form_buscador"  onSubmit={handleSubmit} >
-            <input
-                ref={ref}
-                className="form-control"
-                type="text"
-            />
-        <div className="boton_buscador">
-            <button type="submit" className="btn btn-light btn_buscador">Buscar</button>
-            <button onClick={handleReset} type="reset" className="btn btn-dark">X</button>
+            <form className="formulario_buscador" onSubmit={handleSubmit} >
+                <input
+                    ref={ref}
+                    className="form-control"
+                    type="text"
+                    placeholder="Buscá repuestos, accesorios y más..."
+                />    
+            </form>
+            <button className="btn boton_buscador">
+                    <FcSearch className="btn_buscador" size='25px'/>
+            </button>
+            
         </div>
-        </form>
-        </div>
-        </div>
+
     )
 }
 

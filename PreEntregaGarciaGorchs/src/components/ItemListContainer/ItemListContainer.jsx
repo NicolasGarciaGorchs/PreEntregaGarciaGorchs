@@ -1,50 +1,49 @@
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import { useParams } from 'react-router-dom'
-import { useSearchParams } from 'react-router-dom'
+import { collection, getDocs, query, where, limit } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-    const [searchParams] = useSearchParams()
-
-    const search = searchParams.get("search")
 
     const { categoryId } = useParams()
 
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-            .then((res) => {
-                if (!categoryId) {
-                    setProductos(res)
-                } else {
-                    setProductos( res.filter((item) => item.category === categoryId) )
-                }
+        // 1.- armar una referencia (sync)
+        const productosRef = collection(db, "productos")
+        const q = categoryId 
+                    ? query(productosRef, where("category", "==", categoryId))
+                    : productosRef
+        // 2.- peticion de esa referencia (async)
+        getDocs(q)
+            .then((resp) => {
+                const items = resp.docs.map((doc) => ({...doc.data(), id: doc.id}))
+                setProductos(items)
             })
-            .catch((err) => console.log(err))
+            .catch(e => console.log(e))
             .finally(() => setLoading(false))
+
     }, [categoryId])
 
-    const listado = search
-                        ? productos.filter(prod => prod.nombre.includes(search))
-                        : productos
-
+                        
     return (
-        <div className="container padding_list my-5">
+        <div className="container">
             {
                 loading
-                    ? <div className="loader">
-					<div data-glitch="Loading..." className="glitch">Cargando...</div>
-				 </div>
-                    : <ItemList items={listado}/>
+                    ? <div className="centrar_style"><div data-glitch="Loading..." className="glitch">Cargando...</div></div>
+                    : <ItemList items={productos}/>
             }
         </div>
     )
 }
 
 export default ItemListContainer
+
+
+//listados en items={listados}

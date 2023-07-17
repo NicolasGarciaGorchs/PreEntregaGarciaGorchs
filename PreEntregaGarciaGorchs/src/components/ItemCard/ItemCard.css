@@ -4,8 +4,8 @@
 }
 
 .size_card {
-  padding: 4%;
-  width: 100%;
+  padding: 18%;
+  width: 95%;
 }
 
 .descripcion_card {
@@ -23,9 +23,9 @@
 }
 
 .card {
-  --bs-card-bg: rgb(51, 50, 49) !important;
-  --bs-card-border-color: rgb(51, 50, 49) !important;
-  background: black;
+  --bs-card-bg: rgb(26, 25, 25) !important;
+  --bs-card-border-color: rgb(63, 62, 62) !important;
+  background: rgb(26, 25, 25);
   border-radius: 21px;
   display: flex;
   flex-direction: column;
@@ -43,36 +43,33 @@
   transition: all 0.5s;
   display: flex;
   justify-content: center;
-  width: 150px;
-  height: 350px;
-}
-
-.card-img .img {
-  width: 150px !important;
-  height: 250px !important;
+  width: 302px !important;
+  height: 350px !important;
+  background-color: rgb(26, 25, 25) !important;
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   text-align: center;
-  color: white;
-  background-color: rgb(51, 50, 49);
+  color: rgba(255, 255, 255, 0.671);
+  background-color: rgb(26, 25, 25);
 }
 
 .card-subtitle {
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  color: white;
-  background-color: rgb(51, 50, 49);
+  color: rgba(255, 255, 255, 0.671);
+  background-color: rgb(26, 25, 25);
 }
 
 .card-divider {
   width: 100%;
-  border: 1pxwhite;
+  border: 1px rgb(5, 5, 5);
   border-radius: 50px;
+  padding-top: 1%;
 }
 
 .card-footer {
@@ -80,25 +77,26 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 12% !important;
 }
 
 .card-price {
   font-size: 20px;
   font-weight: 500;
-  color: white;
-  background-color: rgb(51, 50, 49) !important;
+  color: rgba(255, 255, 255, 0.671);
+  background-color: rgb(26, 25, 25) !important;
 }
 
 .card-price span {
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: rgb(233, 229, 229);
 }
 
 .card-btn {
   height: 40px;
   color: white;
-  background: rgb(26, 25, 24);
+  background: rgb(122, 122, 122);
   border: 2px rgb(0, 0, 0);
   border-radius: 5px;
   padding: 0 15px;

@@ -1,22 +1,32 @@
 .contenedor_buscador {
-  padding: 2%;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+.titulo_buscador {
+  font-size: 90%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .formulario_buscador {
-  justify-content: center;
-  display: flex;
-}
-
-.titulo_buscador {
-  font-size: 120%;
-}
-
-.form_buscador {
-  width: 25%;
+  width: 30%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .boton_buscador {
-  padding-top: 4%;
+  background-color: rgb(15, 15, 15);
+  border: rgb(68, 71, 68);
+}
+
+.boton_buscador:hover {
+  background-color: orange;
+}
+
+.form-control {
+  background-color: rgb(15, 15, 15);
+  color: white;
 }/*# sourceMappingURL=Buscador.css.map */

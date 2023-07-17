@@ -32,7 +32,7 @@ const ContenidoSucursales = () => {
                     <p>HORARIOS: Lunes a Viernes de 8 a 18hs.</p>
                     <p>EMAIL: contacto.mossimotos@gmail.com</p>
                 </div>
-                {/* <iframe class= "size_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.889004891234!2d-58.79420918519321!3d-34.65750596785227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc94f9ab96a6d5%3A0x159b90808b65a!2sLarrea%202616%2C%20B1744ILR%20Moreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1674533722335!5m2!1ses-419!2sar" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+                {/* <img  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.889004891234!2d-58.79420918519321!3d-34.65750596785227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc94f9ab96a6d5%3A0x159b90808b65a!2sLarrea%202616%2C%20B1744ILR%20Moreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1674533722335!5m2!1ses-419!2sar" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" /> */}
             </section>
         </main>
     )

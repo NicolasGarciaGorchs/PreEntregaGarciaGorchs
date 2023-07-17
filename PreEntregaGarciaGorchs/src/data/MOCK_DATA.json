@@ -6,7 +6,7 @@
         "descripcion": "XR 125/XTZ 125",
         "precio": 73.119 ,
         "img": "src/assets/productos/cubiertas/combo_enduro.png",
-        "cantidad":10
+        "stock":10
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "descripcion": " XR 250/XTZ 250",
         "precio": 52.499,
         "img": "src/assets/productos/cubiertas/rinalditornado.png",
-        "cantidad":10
+        "stock":10
     },
     {
         "id": 3,

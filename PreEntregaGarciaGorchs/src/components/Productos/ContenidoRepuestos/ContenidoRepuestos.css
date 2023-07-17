@@ -1,0 +1,20 @@
+.contenido_repuestos {
+  padding-top: 5%;
+  color: rgb(175, 174, 174);
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.titulo_repuestos {
+  font-size: 210%;
+  padding-bottom: 2%;
+}
+
+.texto_repuestos {
+  font-size: 130%;
+}
+
+.texto_compra {
+  font-size: 130%;
+}/*# sourceMappingURL=ContenidoRepuestos.css.map */

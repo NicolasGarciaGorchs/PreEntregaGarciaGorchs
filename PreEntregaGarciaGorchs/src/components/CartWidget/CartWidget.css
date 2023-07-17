@@ -1,0 +1,14 @@
+.link_cart {
+  text-decoration: none !important;
+  color: rgb(175, 174, 174) !important;
+  width: 10% !important;
+}
+
+.cart_style:hover {
+  color: orange !important;
+}
+
+.span_style {
+  font-size: 180%;
+  padding: 1%;
+}/*# sourceMappingURL=CartWidget.css.map */

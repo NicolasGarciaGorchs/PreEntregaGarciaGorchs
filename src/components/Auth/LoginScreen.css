@@ -1,0 +1,68 @@
+.titulo_login {
+  color: rgba(255, 255, 255, 0.671);
+  display: flex;
+  justify-content: center;
+  padding: 8%;
+  font-size: 250%;
+  font-family: "Jost", sans-serif;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.padding_reg {
+  color: rgba(255, 255, 255, 0.671);
+  font-size: 100%;
+  font-family: "Jost", sans-serif;
+  padding-top: 1%;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.style_reg {
+  padding-bottom: 1%;
+  text-decoration: none;
+  color: rgba(255, 129, 11, 0.884);
+}
+
+.style_reg:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btn1 {
+  background-color: orange !important;
+}
+
+.btn1:hover {
+  background-color: rgb(67, 148, 29) !important;
+  color: white !important;
+}
+
+.btn2 {
+  color: rgb(0, 0, 0) !important;
+  background-color: orange !important;
+}
+
+.btn2:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(206, 6, 6) !important;
+}
+
+.btn3 {
+  background-color: orange !important;
+}
+
+.btn3:hover {
+  background-color: rgb(67, 148, 29) !important;
+  color: white !important;
+}/*# sourceMappingURL=LoginScreen.css.map */

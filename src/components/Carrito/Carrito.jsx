@@ -1,4 +1,4 @@
-import '../Productos/ContenidoRepuestos/ContenidoRepuestos.css'
+import '../Productos/ContenidoRepuestos/ContenidoRepuestos.scss'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Cart from '../Cart/Cart'

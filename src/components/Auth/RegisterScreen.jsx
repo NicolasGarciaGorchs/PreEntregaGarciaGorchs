@@ -1,7 +1,6 @@
 import { useContext, useState } from 'react'
 import './LoginScreen.scss'
 import { AuthContext } from '../../context/AuthContext'
-import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Header2 from '../Header2/Header2'
 

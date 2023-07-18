@@ -1,4 +1,4 @@
-import '../ContenidoRepuestos/ContenidoRepuestos.css'
+import '../ContenidoRepuestos/ContenidoRepuestos.scss'
 import CartWidget from '../../CartWidget/CartWidget'
 
 const ContenidoRepuestos = () => {

@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import { useSearchParams } from 'react-router-dom'
-import '../Buscador/Buscador.css'
+import '../Buscador/Buscador.scss'
 import { FcSearch } from 'react-icons/fc';
 
 

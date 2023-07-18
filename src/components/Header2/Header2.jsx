@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../Header2/Header2.css'
+import '../Header2/Header2.scss'
 
 
 

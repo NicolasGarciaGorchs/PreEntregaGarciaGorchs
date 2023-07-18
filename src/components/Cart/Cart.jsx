@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { FaTrashAlt } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import '../Cart/Cart.css'
+import '../Cart/Cart.scss'
 
 const Cart = () => {
     const { cart, totalCompra, vaciarCarrito, eliminarDelCarrito } = useContext(CartContext)

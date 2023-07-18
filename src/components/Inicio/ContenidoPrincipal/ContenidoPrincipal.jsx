@@ -1,4 +1,4 @@
-import './ContenidoPrincipal.css'
+import './ContenidoPrincipal.scss'
 
 const ContenidoPrincipal = () => {
 

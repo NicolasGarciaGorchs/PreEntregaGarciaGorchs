@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../Header/Header.css'
+import '../Header/Header.scss'
 import Buscador from '../Buscador/Buscador'
 import { useContext } from 'react'
 import { AuthContext } from '../../context/AuthContext'

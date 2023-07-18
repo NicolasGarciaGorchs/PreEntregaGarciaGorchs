@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "./ItemCard.css";
-import "../ItemDetailContainer/ItemDetailContainer.css"
+import "./ItemCard.scss";
+import "../ItemDetailContainer/ItemDetailContainer.scss";
 
 const ItemCard = ({ id, nombre, precio, descripcion, img }) => {
   return (

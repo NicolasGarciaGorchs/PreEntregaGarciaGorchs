@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
-import '../ItemDetail/ItemDetail.scss'
+import './ItemDetail.scss'
 
 const ItemDetail = ({ id, nombre, precio, category, descripcion, img, stock }) => {
 

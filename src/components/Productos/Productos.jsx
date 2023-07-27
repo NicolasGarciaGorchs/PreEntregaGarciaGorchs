@@ -1,8 +1,8 @@
-import './ContenidoRepuestos/ContenidoRepuestos'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import ContenidoRepuestos from './ContenidoRepuestos/ContenidoRepuestos'
+import './ContenidoRepuestos/ContenidoRepuestos'
 
 
 const Productos = () => {

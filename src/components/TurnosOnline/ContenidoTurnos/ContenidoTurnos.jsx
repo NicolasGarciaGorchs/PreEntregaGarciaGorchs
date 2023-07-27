@@ -1,4 +1,4 @@
-import '../ContenidoTurnos/ContenidoTurnos.scss'
+import './ContenidoTurnos.scss'
 
 const ContenidoTurnos = () => {
     return (

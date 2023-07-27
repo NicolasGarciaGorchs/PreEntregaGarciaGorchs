@@ -1,9 +1,9 @@
-import '../ItemDetailContainer/ItemDetailContainer.scss'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import ItemDetail from '../ItemDetail/ItemDetail'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../firebase/config'
+import ItemDetail from '../ItemDetail/ItemDetail'
+import './ItemDetailContainer.scss'
 
 const ItemDetailContainer = () => {
 

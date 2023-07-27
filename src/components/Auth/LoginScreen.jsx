@@ -1,9 +1,9 @@
 import React,{ useContext, useState } from 'react'
-import './LoginScreen.scss'
-import { AuthContext } from '../../context/AuthContext'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../context/AuthContext'
 import Header2 from '../Header2/Header2'
 import Footer from '../Footer/Footer'
+import './LoginScreen.scss'
 
 const LoginScreen = () => {
     const { login, googleLogin } = useContext(AuthContext)

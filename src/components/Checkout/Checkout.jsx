@@ -7,7 +7,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as Yup from 'yup'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import '../Checkout/Checkout.scss'
+import './Checkout.scss'
 
 const schema = Yup.object().shape({
     nombre: Yup.string()

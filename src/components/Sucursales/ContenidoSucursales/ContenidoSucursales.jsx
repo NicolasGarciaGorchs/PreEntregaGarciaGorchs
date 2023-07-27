@@ -1,4 +1,4 @@
-import '../ContenidoSucursales/ContenidoSucursales.scss'
+import './ContenidoSucursales.scss'
 
 const ContenidoSucursales = () => {
     return (

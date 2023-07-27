@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import '../Header/Header.scss'
-import Buscador from '../Buscador/Buscador'
 import { useContext } from 'react'
 import { AuthContext } from '../../context/AuthContext'
+import Buscador from '../Buscador/Buscador'
+import './Header.scss'
 
 const Header = () => {
 

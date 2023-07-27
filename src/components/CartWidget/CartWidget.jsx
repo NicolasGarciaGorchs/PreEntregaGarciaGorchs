@@ -2,7 +2,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
-import '../CartWidget/CartWidget.scss'
+import './CartWidget.scss'
 
 
 

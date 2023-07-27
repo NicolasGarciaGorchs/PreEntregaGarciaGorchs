@@ -1,5 +1,5 @@
-import '../ContenidoRepuestos/ContenidoRepuestos.scss'
 import CartWidget from '../../CartWidget/CartWidget'
+import './ContenidoRepuestos.scss'
 
 const ContenidoRepuestos = () => {
 

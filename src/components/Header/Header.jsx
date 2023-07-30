@@ -38,12 +38,12 @@ const Header = () => {
           </div>
         </nav>
         <hr />
-        <div>
+        {/* <div>
           <Buscador />
-        </div>
+        </div> */}
         <div className="usuario_contenedor">
-          <p>Bienvenido {user.email}</p>
-          <button className='btn logout1' onClick={logout}>Cerrar sesión</button>
+          <p>BIENVENIDO {user.email}</p>
+          <button className='btn logout1' onClick={logout}>CERRAR SESIÓN</button>
         </div>
       </div>
     </header>

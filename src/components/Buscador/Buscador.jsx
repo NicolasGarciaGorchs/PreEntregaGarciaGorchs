@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { useSearchParams } from 'react-router-dom'
-import './Buscador.scss'
 import { FcSearch } from 'react-icons/fc';
+import './Buscador.scss'
 
 
 const Buscador = () => {

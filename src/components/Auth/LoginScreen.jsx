@@ -1,4 +1,4 @@
-import React,{ useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContext'
 import Header2 from '../Header2/Header2'
@@ -13,6 +13,8 @@ const LoginScreen = () => {
         password: ''
     })
 
+    const [error, setError] = useState(false);
+
     const handleInputChange = (e) => {
         setValues({
             ...values,
@@ -20,18 +22,29 @@ const LoginScreen = () => {
         })
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        login(values)
-    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError(false);
+
+        try {
+            await login(values);
+        } catch (error) {
+            console.log(error);
+            setError(true);
+        }
+    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+    //     login(values)
+    // }
 
     return (
         <div className='login'>
-                <Header2 />
-                <div className="titulo_login">
+            <Header2 />
+            <div className="titulo_login">
                 ¡INGRESÁ PARA ACCEDER A LOS BENEFICIOS DE NUESTRA COMUNIDAD!
-                </div>
-                <div className="login_form">
+            </div>
+            <div className="login_form">
                 <form onSubmit={handleSubmit}>
                     <input
                         value={values.email}
@@ -49,16 +62,21 @@ const LoginScreen = () => {
                         className='form-control my-2'
                         name='password'
                     />
+
+                    {error && (
+                        <p className='texto_error'>Los datos ingresados son incorrectos</p>
+                    )}
+
+                    <div className="botonera">
+                        <button className='btn btn-success' type='submit'>Iniciar sesión</button>
+                    </div>
                 </form>
-                </div>
-                <div className="botonera">
-                <button className='btn btn1' type='submit'>Iniciar sesión</button>
                 <div className="padding_reg">
-                No tenés cuenta?
+                    No tenés cuenta?
                 </div>
                 <Link className="style_reg" to="/register">Click Aquí</Link>
-                <button className='btn btn2' onClick={googleLogin}>Iniciar sesión con Google</button>
-                </div>
+                <button className='btn btn-primary' onClick={googleLogin}>Iniciar sesión con Google</button>
+            </div>
             <Footer />
         </div>
     )

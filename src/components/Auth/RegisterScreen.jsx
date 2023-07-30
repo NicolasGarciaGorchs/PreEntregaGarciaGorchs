@@ -1,8 +1,9 @@
 import { useContext, useState } from 'react'
-import './LoginScreen.scss'
 import { AuthContext } from '../../context/AuthContext'
+import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Header2 from '../Header2/Header2'
+import './LoginScreen.scss'
 
 
 const RegisterScreen = () => {
@@ -11,7 +12,10 @@ const RegisterScreen = () => {
     const [values, setValues] = useState({
         email: '',
         password: ''
-    })
+    })  
+
+    const [error, setError] = useState(false);
+
 
     const handleInputChange = (e) => {
         setValues({
@@ -20,10 +24,16 @@ const RegisterScreen = () => {
         })
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        register(values)
-    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError(false);
+        try {
+            await register(values);
+        } catch (error) {
+            console.log(error);
+            setError(true);
+        }
+    };
 
     return (
         <div>
@@ -43,14 +53,6 @@ const RegisterScreen = () => {
                         name='email'
                     />
                     <input
-                        value={values.email}
-                        onChange={handleInputChange}
-                        type='email'
-                        placeholder='Repetir email'
-                        className='form-control my-4'
-                        name='email'
-                    />
-                    <input
                         value={values.password}
                         onChange={handleInputChange}
                         type='password'
@@ -58,18 +60,15 @@ const RegisterScreen = () => {
                         className='form-control my-4'
                         name='password'
                     />
-                    <input
-                        value={values.password}
-                        onChange={handleInputChange}
-                        type='password'
-                        placeholder='Repetir contraseña'
-                        className='form-control my-1'
-                        name='password'
-                    />
-                    
+                     {error && (
+                        <p className='texto_error'>Los datos ingresados se encuentran registrados o son incorrectos</p>
+                    )}
+                    <div className='botonera_registrarse'>
+                    <button className='btn btn-success' type='submit'>Registrarse</button>
+                    </div>
                 </form>
-                <div className="botonera">
-                <button className='btn btn3' type='submit'>Registrarse</button>
+                <div className="botonera_registrado">
+                <Link to="/login"><button className='btn btn-primary'>Ya estoy registrado</button></Link>
                 </div>
                 </div>
                 <Footer />

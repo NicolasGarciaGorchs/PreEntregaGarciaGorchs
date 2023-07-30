@@ -23,7 +23,14 @@
     padding-top: 1%;
 }
 
-.botonera{
+.botonera_registrarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1% ;
+}
+
+.botonera_registrado{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,37 +40,13 @@
 .style_reg {
     padding-bottom: 1%;
     text-decoration: none;
-    color:rgba(255, 129, 11, 0.884);
+    color:rgba(255, 174, 0, 0.979);
 }
 
 .style_reg:hover {
-    color: rgb(255, 255, 255);
+    color:rgb(222, 247, 248);
 }
 
-.btn1 {
-    background-color: orange !important;
-}
-
-.btn1:hover {
-    background-color: rgb(67, 148, 29) !important;
-    color:white !important;
-}
-
-.btn2 {
-    color: rgb(0, 0, 0) !important;
-    background-color: orange !important;
-}
-
-.btn2:hover {
-    color: rgb(255, 255, 255) !important;
-    background-color: rgb(206, 6, 6) !important;
-}
-
-.btn3 {
-    background-color: orange !important;
-}
-
-.btn3:hover {
-    background-color: rgb(67, 148, 29) !important;
-    color:white !important;
+.texto_error {
+    color: red !important;
 }

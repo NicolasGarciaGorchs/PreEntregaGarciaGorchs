@@ -5,6 +5,34 @@
     color:rgb(175, 174, 174);
     padding-top: 5%;
     justify-content: center;
+    padding-bottom: 6%;
+}
+
+.texto_checkout1{ 
+    display: flex;
+    font-size:210%;
+    font-family: 'Jost', sans-serif;
+    color:rgb(175, 174, 174);
+    padding-top: 5%;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+.texto_checkout2{ 
+    display: flex;
+    font-size:210%;
+    font-family: 'Jost', sans-serif;
+    color:rgb(175, 174, 174);
+    padding-top: 1%;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+.texto_checkout3{ 
+    display: flex;
+    font-size:150%;
+    font-family: 'Jost', sans-serif;
+    color:rgb(175, 174, 174);
+    padding-top: 3%;
+    justify-content: center;
     padding-bottom: 5%;
 }
 
@@ -27,8 +55,45 @@
     justify-content: center;
 }
 
-.btn_style_form {
-    padding-top: 2%;
+.btn1 {
+    background-color: orange !important;
+}
+
+.btn1:hover {
+    background-color: rgb(67, 148, 29) !important;
+    color:white !important;
+}
+
+.btn2 {
+    background-color: orange !important;
+}
+
+.btn2:hover {
+    background-color: rgb(255, 0, 0) !important;
+    color:white !important;
+}
+
+.botonera{
     display: flex;
-    justify-content: center;
-    }
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20% !important;
+}
+
+.botonera1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.botonera_id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.formik_style {
+    color: white !important;
+}

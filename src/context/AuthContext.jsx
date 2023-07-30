@@ -1,53 +1,81 @@
 import { createContext, useEffect, useState } from "react";
 import { signInWithPopup, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { auth, provider } from "../firebase/config";
+import { auth, provider } from "../firebase/config.js";
 
 
 export const AuthContext = createContext()
 
-export const AuthContextProvider = ({children}) => {
+export const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState({
         logged: false,
         email: null
     })
 
     const login = (values) => {
-        signInWithEmailAndPassword(auth, values.email, values.password)
-            .catch(e => console.log(e))
+        // signInWithEmailAndPassword(auth, values.email, values.password)
+        //     .catch(e => console.log(e))
+        return signInWithEmailAndPassword(auth, values.email, values.password);
     }
 
     const register = (values) => {
-        createUserWithEmailAndPassword(auth, values.email, values.password)
-            .catch(e => console.log(e))
+        // createUserWithEmailAndPassword(auth, values.email, values.password)
+        //     .catch(e => console.log(e))
+        return createUserWithEmailAndPassword(auth, values.email, values.password);
     }
 
     const logout = () => {
-        signOut(auth)
+        signOut(auth);
     }
 
     const googleLogin = () => {
-        signInWithPopup(auth, provider)
+        signInWithPopup(auth, provider);
     }
 
     useEffect(() => {
+        const storedUser = localStorage.getItem("user");
+        if (storedUser) {
+            setUser(JSON.parse(storedUser));
+        }
+    }, []);
+
+
+    useEffect(() => {
         onAuthStateChanged(auth, (user) => {
-            console.log(user)
             if (user) {
-                setUser({
+                const userData = {
                     logged: true,
-                    email: user.email
-                })
+                    email: user.email,
+                };
+                localStorage.setItem("user", JSON.stringify(userData));
+                setUser(userData);
             } else {
+                localStorage.removeItem("user");
                 setUser({
                     logged: false,
-                    email: null
-                })
+                    email: null,
+                });
             }
-        })
-    }, [])
+        });
+    }, []);
+
+    // useEffect(() => {
+    //     onAuthStateChanged(auth, (user) => {
+    //         if (user) {
+    //             setUser({
+    //                 logged: true,
+    //                 email: user.email
+    //             })
+    //         } else {
+    //             setUser({
+    //                 logged: false,
+    //                 email: null
+    //             })
+    //         }
+    //     })
+    // }, [])
 
     return (
-        <AuthContext.Provider value={{googleLogin, user, login, register, logout}}>
+        <AuthContext.Provider value={{ googleLogin, user, login, register, logout }}>
             {children}
         </AuthContext.Provider>
     )
